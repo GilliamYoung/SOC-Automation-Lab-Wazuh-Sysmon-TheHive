@@ -115,7 +115,7 @@ A custom Wazuh detection rule was created to identify Mimikatz execution activit
     </mitre>
 </rule>
 
-<img width="1900" height="848" alt="rule updated wazuh" src="https://github.com/user-attachments/assets/b201b868-4753-4f13-9a25-1e38b198a884" />
+[<img width="1900" height="848" alt="rule updated wazuh" src="https://github.com/user-attachments/assets/34c3bb3d-8b35-4c2a-8d15-8b5cbc55375d" />](https://github.com/GilliamYoung/SOC-Automation-Lab-Wazuh-Sysmon-TheHive/blob/main/rule%20updated%20wazuh.png)
 
 ---
 
@@ -123,7 +123,7 @@ A custom Wazuh detection rule was created to identify Mimikatz execution activit
 
 Mimikatz was downloaded and executed on the Windows 11 endpoint to simulate credential dumping behavior commonly used by attackers.
 
-<img width="1016" height="670" alt="mimikatz downloaded" src="https://github.com/user-attachments/assets/ddd95d1e-2f9a-4891-a104-6bab0812267f" />
+[<img width="1016" height="670" alt="mimikatz downloaded" src="https://github.com/user-attachments/assets/ddd95d1e-2f9a-4891-a104-6bab0812267f" />](https://github.com/GilliamYoung/SOC-Automation-Lab-Wazuh-Sysmon-TheHive/blob/main/mimikatz%20downloaded.png)
 
 ---
 
@@ -142,9 +142,9 @@ Once Mimikatz executed, Sysmon generated telemetry which was ingested by Wazuh a
 
 # Wazuh Detection Output
 
-<img width="1893" height="892" alt="mimikatz discovery wazuh" src="https://github.com/user-attachments/assets/c23e4d65-5d3e-4180-91b7-699934200ae0" />
+[<img width="1893" height="892" alt="mimikatz discovery wazuh" src="https://github.com/user-attachments/assets/c23e4d65-5d3e-4180-91b7-699934200ae0" />](https://github.com/GilliamYoung/SOC-Automation-Lab-Wazuh-Sysmon-TheHive/blob/main/mimikatz%20discovery%20wazuh.png)
 
-<img width="1885" height="902" alt="mimikatz alerts wazuh" src="https://github.com/user-attachments/assets/dc29cda7-32b3-4304-987d-1903a107aa25" />
+[<img width="1885" height="902" alt="mimikatz alerts wazuh" src="https://github.com/user-attachments/assets/dc29cda7-32b3-4304-987d-1903a107aa25" />](https://github.com/GilliamYoung/SOC-Automation-Lab-Wazuh-Sysmon-TheHive/blob/main/mimikatz%20alerts%20wazuh.png)
 
 ---
 
@@ -160,7 +160,7 @@ Shuffle SOAR was integrated to automate incident response workflows.
 5. Incident case automatically created
 6. Email sent to Analyst
 
-<img width="1898" height="911" alt="shuffle automation" src="https://github.com/user-attachments/assets/4d680afa-5ecb-41d0-8fa8-fc9a8556d816" />
+[<img width="1898" height="911" alt="shuffle automation" src="https://github.com/user-attachments/assets/4d680afa-5ecb-41d0-8fa8-fc9a8556d816" />](https://github.com/GilliamYoung/SOC-Automation-Lab-Wazuh-Sysmon-TheHive/blob/main/shuffle%20automation.png)
 
 ---
 
@@ -176,7 +176,7 @@ TheHive was configured as the incident response platform for:
 
 # TheHive Alert Creation
 
-<img width="1247" height="377" alt="mimikatz usage detected the hive" src="https://github.com/user-attachments/assets/2ce3b03b-a794-474b-b933-ee47d3e14253" />
+[<img width="1247" height="377" alt="mimikatz usage detected the hive" src="https://github.com/user-attachments/assets/2ce3b03b-a794-474b-b933-ee47d3e14253" />](https://github.com/GilliamYoung/SOC-Automation-Lab-Wazuh-Sysmon-TheHive/blob/main/mimikatz%20usage%20detected%20the%20hive.png)
 
 
 ---
