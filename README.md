@@ -176,7 +176,7 @@ TheHive was configured as the incident response platform for:
 
 # TheHive Alert Creation
 
-[<img width="1247" height="377" alt="mimikatz usage detected the hive" src="https://github.com/user-attachments/assets/2ce3b03b-a794-474b-b933-ee47d3e14253" />](https://github.com/GilliamYoung/SOC-Automation-Lab-Wazuh-Sysmon-TheHive/blob/main/mimikatz%20usage%20detected%20the%20hive.png)
+!{image_alt]([https://github.com/GilliamYoung/SOC-Automation-Lab-Wazuh-Sysmon-TheHive/blob/main/mimikatz%20usage%20detected%20the%20hive.png](https://github.com/GilliamYoung/SOC-Automation-Lab-Wazuh-Sysmon-TheHive/blob/ec34dc1fe672168d0214758cb615dd26b915dc85/mimikatz%20usage%20detected%20the%20hive.png))
 
 
 ---
