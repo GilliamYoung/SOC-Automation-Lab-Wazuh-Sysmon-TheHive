@@ -1,4 +1,4 @@
-# SOC Automation Lab | Wazuh + Sysmon + TheHive + Shuffle SOAR
+# SOC Automation Lab | Wazuh + Sysmon + TheHive
 
 ## Overview
 This project demonstrates the creation of a small-scale Security Operations Center (SOC) automation environment using virtualization, cloud infrastructure, SIEM monitoring, custom detection engineering, and automated incident response workflows.
@@ -42,17 +42,9 @@ The environment consists of:
 | Ubuntu Server (Wazuh) | SIEM and log analysis |
 | Ubuntu Server (TheHive) | Incident response platform |
 
----
-
-# VirtualBox Windows 11 Endpoint
-
 The Windows 11 virtual machine was hosted locally using Oracle VirtualBox and configured with Sysmon for advanced telemetry generation.
 
 <img width="998" height="623" alt="windows 11 vm virtual box" src="https://github.com/user-attachments/assets/b877a25d-b156-4024-8fdc-f894793a0138" />
-
----
-
-# Vultr Cloud Infrastructure
 
 Two Ubuntu cloud servers were deployed through Vultr:
 - Wazuh SIEM Server
@@ -69,23 +61,11 @@ Wazuh was configured as the centralized SIEM platform for:
 - Log analysis
 - Threat detection
 - Rule-based alerting
-
-## Features Configured
-- Wazuh Dashboard
-- Filebeat
-- OpenSearch
-- Custom Detection Rules
-- Sysmon Event Monitoring
-
 ---
 
 # Wazuh Dashboard
 
-<img width="1898" height="911" alt="wazuh downloaded" src="https://github.com/user-attachments/assets/6ca99a51-6202-45ae-992d-5d2f2169cffa" />
-
 <img width="977" height="596" alt="active agent" src="https://github.com/user-attachments/assets/7c48edc3-c333-40ea-9eea-306587f745f4" />
-
-
 ---
 
 # Sysmon Configuration
@@ -99,9 +79,6 @@ Sysmon was installed on the Windows 11 endpoint to provide enhanced visibility i
 
 The Windows endpoint was onboarded into Wazuh using the Wazuh agent.
 
-<img width="1896" height="897" alt="sysmon telemetry" src="https://github.com/user-attachments/assets/82218ebb-794e-4d04-bd5b-32619fa4c27c" />
-
-<img width="1903" height="905" alt="atual sysmon telemetry" src="https://github.com/user-attachments/assets/eb68ef91-2ec8-49c9-9c09-57fee95cfc41" />
 
 <img width="1910" height="840" alt="actualsysmonhighlight" src="https://github.com/user-attachments/assets/0ac24a2f-077b-406a-87b4-0aa41b70d517" />
 
@@ -138,8 +115,7 @@ A custom Wazuh detection rule was created to identify Mimikatz execution activit
     </mitre>
 </rule>
 
-<img width="1900" height="848" alt="rule updated wazuh" src="https://github.com/user-attachments/assets/da39671b-e2bd-4544-b5bb-5c0c1a7f9911" />
-
+<img width="1900" height="848" alt="rule updated wazuh" src="https://github.com/user-attachments/assets/b201b868-4753-4f13-9a25-1e38b198a884" />
 
 ---
 
@@ -148,8 +124,6 @@ A custom Wazuh detection rule was created to identify Mimikatz execution activit
 Mimikatz was downloaded and executed on the Windows 11 endpoint to simulate credential dumping behavior commonly used by attackers.
 
 <img width="1016" height="670" alt="mimikatz downloaded" src="https://github.com/user-attachments/assets/ddd95d1e-2f9a-4891-a104-6bab0812267f" />
-
-
 
 ---
 
@@ -202,7 +176,8 @@ TheHive was configured as the incident response platform for:
 
 # TheHive Alert Creation
 
-<img width="1247" height="377" alt="mimikatz usage detected the hive" src="https://github.com/user-attachments/assets/97895cd6-0597-4a35-bd0e-8010b2cb5f44" />
+<img width="1247" height="377" alt="mimikatz usage detected the hive" src="https://github.com/user-attachments/assets/2ce3b03b-a794-474b-b933-ee47d3e14253" />
+
 
 ---
 
@@ -254,4 +229,3 @@ TheHive was configured as the incident response platform for:
 
 ## Gilliam Young
 Cybersecurity Enthusiast | SOC Analyst Aspirant | Detection Engineering & SIEM Automation
-
