@@ -65,7 +65,8 @@ Wazuh was configured as the centralized SIEM platform for:
 
 # Wazuh Dashboard
 
-<img width="977" height="596" alt="active agent" src="https://github.com/user-attachments/assets/7c48edc3-c333-40ea-9eea-306587f745f4" />
+<img width="977" height="596" alt="active agent" src="https://github.com/user-attachments/assets/c16b29b4-63a8-4399-92a6-e039a1878d8a" />
+
 ---
 
 # Sysmon Configuration
@@ -105,17 +106,9 @@ Custom indexing was configured to allow deeper inspection of raw event data from
 A custom Wazuh detection rule was created to identify Mimikatz execution activity using Sysmon Event ID monitoring.
 
 ## Custom Rule
-```xml
-<rule id="100002" level="15">
-    <if_group>sysmon_event1</if_group>
-    <field name="win.eventdata.originalFileName" type="pcre2">(?i)mimikatz\.exe</field>
-    <description>Mimikatz Usage Detected</description>
-    <mitre>
-        <id>T1003</id>
-    </mitre>
-</rule>
 
-[<img width="1900" height="848" alt="rule updated wazuh" src="https://github.com/user-attachments/assets/34c3bb3d-8b35-4c2a-8d15-8b5cbc55375d" />](https://github.com/GilliamYoung/SOC-Automation-Lab-Wazuh-Sysmon-TheHive/blob/main/rule%20updated%20wazuh.png)
+<img width="1900" height="848" alt="rule updated wazuh" src="https://github.com/user-attachments/assets/72efb947-d2df-4ea9-8cdd-07d8875f705d" />
+
 
 ---
 
@@ -123,7 +116,8 @@ A custom Wazuh detection rule was created to identify Mimikatz execution activit
 
 Mimikatz was downloaded and executed on the Windows 11 endpoint to simulate credential dumping behavior commonly used by attackers.
 
-[<img width="1016" height="670" alt="mimikatz downloaded" src="https://github.com/user-attachments/assets/ddd95d1e-2f9a-4891-a104-6bab0812267f" />](https://github.com/GilliamYoung/SOC-Automation-Lab-Wazuh-Sysmon-TheHive/blob/main/mimikatz%20downloaded.png)
+<img width="1016" height="670" alt="mimikatz downloaded" src="https://github.com/user-attachments/assets/c16961fb-f4b0-4503-abc8-6dd7dc57351c" />
+
 
 ---
 
@@ -142,9 +136,10 @@ Once Mimikatz executed, Sysmon generated telemetry which was ingested by Wazuh a
 
 # Wazuh Detection Output
 
-[<img width="1893" height="892" alt="mimikatz discovery wazuh" src="https://github.com/user-attachments/assets/c23e4d65-5d3e-4180-91b7-699934200ae0" />](https://github.com/GilliamYoung/SOC-Automation-Lab-Wazuh-Sysmon-TheHive/blob/main/mimikatz%20discovery%20wazuh.png)
+<img width="1885" height="902" alt="mimikatz alerts wazuh" src="https://github.com/user-attachments/assets/f4ad7e1f-b846-4c56-96dc-cdd79c4c3418" />
 
-[<img width="1885" height="902" alt="mimikatz alerts wazuh" src="https://github.com/user-attachments/assets/dc29cda7-32b3-4304-987d-1903a107aa25" />](https://github.com/GilliamYoung/SOC-Automation-Lab-Wazuh-Sysmon-TheHive/blob/main/mimikatz%20alerts%20wazuh.png)
+<img width="1893" height="892" alt="mimikatz discovery wazuh" src="https://github.com/user-attachments/assets/c41ea0bb-7642-4758-9997-6772f084cfc2" />
+
 
 ---
 
@@ -160,7 +155,7 @@ Shuffle SOAR was integrated to automate incident response workflows.
 5. Incident case automatically created
 6. Email sent to Analyst
 
-[<img width="1898" height="911" alt="shuffle automation" src="https://github.com/user-attachments/assets/4d680afa-5ecb-41d0-8fa8-fc9a8556d816" />](https://github.com/GilliamYoung/SOC-Automation-Lab-Wazuh-Sysmon-TheHive/blob/main/shuffle%20automation.png)
+<img width="1898" height="911" alt="shuffle automation" src="https://github.com/user-attachments/assets/155e1936-86bf-438a-bf32-ecb28071e86d" />
 
 ---
 
@@ -176,7 +171,7 @@ TheHive was configured as the incident response platform for:
 
 # TheHive Alert Creation
 
-!{image_alt]([https://github.com/GilliamYoung/SOC-Automation-Lab-Wazuh-Sysmon-TheHive/blob/main/mimikatz%20usage%20detected%20the%20hive.png](https://github.com/GilliamYoung/SOC-Automation-Lab-Wazuh-Sysmon-TheHive/blob/ec34dc1fe672168d0214758cb615dd26b915dc85/mimikatz%20usage%20detected%20the%20hive.png))
+<img width="1247" height="377" alt="mimikatz usage detected the hive" src="https://github.com/user-attachments/assets/9f3232f4-a418-46bc-b78d-26efb5fa79ee" />
 
 
 ---
